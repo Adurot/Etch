@@ -23,3 +23,22 @@ div.classList.add("grid-item");
 
 
 }
+
+
+
+function reset() {
+var grids=document.getElementsByClassName('grid-item');
+for(i=0; i< grids.length; i++){
+grids[i].style.backgroundColor="white";
+
+
+}}
+
+
+const res = document.createElement("button");
+res.classList.add("res");
+document.body.appendChild(res);
+res.innerHTML="Reset";
+res.addEventListener("click", function(event)
+{reset();}
+); 
